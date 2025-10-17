@@ -4,130 +4,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Events Page</title>
     <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Events.css">
 </head>
 
 <body>
-    <header>
-        <img src="img/logo.png" alt="logo Eventick">
+    <header class="even-page">
         <nav>
             <ul>
-                <li>
-                    <a href="Home.html">Home</a>
-                </li>
-                <li>
-                    <a href="Events.html">Events</a>
-                </li>
-                <li>
-                    <a href="Blog.html">Blog</a>
-                </li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Blog.html">Blog</a></li>
                 <div id="login">
-                    <li>
-                        <a href="Login.html">Login</a>
-                    </li>
-                    <li>
-                        <a href="SignUp.html">Sign Up</a>
-                    </li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="SignUp.html">Sign Up</a></li>
                 </div>
             </ul>
         </nav>
 
-        <h1>EVENT</h1>
-        <p>Exeter music festival new challenge</p>
     </header>
-
 
     <main>
         <div class="search">
-            <label for="event">Search Event</label>
-            <input id="event" type="text">
-            <label for="place">Place</label>
-            <input id="place" type="text">
-            <label for="Dtime">Time</label>
-            <select name="time" id="Dtime">
-                <option value="">Any date</option>
-                <option value="APR 14">APR 14</option>
-                <option value="AUG 20">AUG 20</option>
-                <option value="SEP 18">SEP 18</option>
-                <option value="APR 15">APR 15</option>
-                <option value="SEP 18">SEP 28</option>
-            </select>
-        </div>
-        <div>
-            <h2>Upcoming Events</h2>
-            <div class="searchEvent">
-                <select name="" id="">
-                    <option value="">Weekdays</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
-                <select name="" id="">
-                    <option value="">Event Type</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
-                <select name="" id="">
-                    <option value="">Any Category</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
-            </div>
-        </div>
-        <div class="card">
-            <img src="img/Rectangle 12.png" alt="Rectangle 12" />
-            <div id="APR">APR<br />14</p>
-                <h3>Wonder Girls 2010 Wonder Girls World Tour San Francisco</h3>
-                <p>We'll get you directly seated and inside for you to enjoy the show.</p>
-            </div>
-
-            <img src="img/Rectangle 12-1.png" alt="Rectangle 12.1" />
-            <div id="APR">AUG<br />20</p>
-                <h3>JYJ 2011 JYJ Worldwide Concert Barcelona</h3>
-                <p>Directly seated and inside for you to enjoy the show.</p>
-            </div>
-
-            <img src="img/Rectangle 12-2.png" alt="Rectangle 12.2" />
-            <div id="APR">SEP<br />18</p>
-                <h3>2011 Super Junior SM Town Live '10 World Tour New York City</h3>
-                <p>Directly seated and inside for you to enjoy the show.</p>
-            </div>
-
-            <img src="img/Rectangle 12-3.png" alt="Rectangle 12.3" />
-            <div id="APR">APR<br />14</p>
-                <h3>Wonder Girls 2010 Wonder Girls World Tour San Francisco</h3>
-                <p>We'll get you directly seated and inside for you to enjoy the show.</p>
-            </div>
-
-            <img src="img/Rectangle 12-5.png" alt="Rectangle 12.5" />
-            <div id="APR">SEP<br />18</p>
-                <h3>2011 Super Junior SM Town Live '10 World Tour New York City</h3>
-                <p>Directly seated and inside for you to enjoy the show.</p>
-            </div>
-            <button><a href="Events.html">Load More</a></button>
-        </div>
-        <div>
-            <img src="img/image 3.png" alt="comunication">
-            <div class="lien">
-                <h2>Make your own Event </h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                <button><a href="Events.html">Events</a></button>
-            </div>
-        </div>
-        <div>
             <div>
-                <h3>Join these brands</h3>
-                <p>We've had the pleasure of working with industry-defining brands. These are just some of them.</p>
+                <label for="event">Search Event</label>
+                <input id="event" type="text" placeholder="Konser Jazz">
             </div>
+            <div>
+                <label for="place">Place</label>
+                <input id="place" type="text" placeholder="Indonesia">
+            </div>
+            <div>
+                <label for="Dtime">Time</label>
+                <select name="time" id="Dtime">
+                    <option value="">Any date</option>
+                    <option value="APR 14">APR 14</option>
+                    <option value="AUG 20">AUG 20</option>
+                    <option value="SEP 18">SEP 18</option>
+                    <option value="APR 15">APR 15</option>
+                    <option value="SEP 28">SEP 28</option>
+                </select>
+            </div>
+        </div>
+
+        <section class="upcoming-events">
+            <div class="container">
+                <div class="events-header">
+                    <h2>Upcoming Events</h2>
+                    <div class="filters">
+                        <select>
+                            <option>Weekdays</option>
+                            <option>Weekends</option>
+                        </select>
+                        <select>
+                            <option>Event Type</option>
+                            <option>Concert</option>
+                            <option>Festival</option>
+                            <option>Conference</option>
+                        </select>
+                        <select>
+                            <option>Any Category</option>
+                            <option>Music</option>
+                            <option>Art</option>
+                            <option>Sport</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="events-grid">
+                    <div class="event-card">
+                        <img src="img/Rectangle 12.png" alt="Event 1">
+                        <div class="date"><span>APR</span><br><strong>14</strong></div>
+                        <div class="event-info">
+                            <h4>Wonder Girls 2010 Wonder Girls World Tour San Francisco</h4>
+                            <p>Well get you directly seated and inside for you to enjoy the show.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <img src="img/Rectangle 12-1.png" alt="Event 2">
+                        <div class="date"><span>AUG</span><br><strong>20</strong></div>
+                        <div class="event-info">
+                            <h4>JYJ 2011 JYJ Worldwide Concert Barcelona</h4>
+                            <p>Directly seated and inside for you to enjoy the show.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <img src="img/Rectangle 12-2.png" alt="Event 3">
+                        <div class="date"><span>SEP</span><br><strong>18</strong></div>
+                        <div class="event-info">
+                            <h4>2011 Super Junior SM Town Live 10 World Tour New York City</h4>
+                            <p>Directly seated and inside for you to enjoy the show.</p>
+                        </div>
+                    </div>
+                    <div class="event-card wide">
+                        <img src="img/Rectangle 12-3.png" alt="Event 4">
+                        <div class="date"><span>APR</span><br><strong>14</strong></div>
+                        <div class="event-info">
+                            <h4>Wonder Girls 2010 Wonder Girls World Tour San Francisco</h4>
+                            <p>Well get you directly seated and inside for you to enjoy the show.</p>
+                        </div>
+                    </div>
+
+                    <div class="event-card">
+                        <img src="img/Rectangle 12-5.png" alt="Event 5">
+                        <div class="date"><span>SEP</span><br><strong>18</strong></div>
+                        <div class="event-info">
+                            <h4>2011 Super Junior SM Town Live 10 World Tour New York City</h4>
+                            <p>Directly seated and inside for you to enjoy the show.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="load-more">
+                    <a href="events.html" class="button">Load More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="make-event">
+            <img src="img/image 3.png" alt="communication">
+            <div class="lien">
+                <h2>Make your own Event</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button><a href="Events.html">Create Events</a></button>
+            </div>
+        </section>
+
+        <section class="brands">
+            <h3>Join these brands</h3>
+            <p>We've had the pleasure of working with industry-defining brands. These are just some of them.</p>
             <div class="imgs">
                 <img src="img/image 4.png" alt="spotify">
                 <img src="img/image 5.png" alt="google">
@@ -137,50 +145,59 @@
                 <img src="img/image 17.png" alt="Medium">
                 <img src="img/image 18.png" alt="Zoom">
                 <img src="img/image 19.png" alt="Uber">
-                <img src="img/image 20.png" alt="Grap">
+                <img src="img/image 20.png" alt="Grab">
             </div>
-        </div>
+        </section>
     </main>
 
-
     <footer>
-        <div>
-            <img src="img/logo.png" alt="logo Eventick">
-            <p>Eventick is a global self-service ticketing platform for live experiences that allows anyone to create,
-                share, find and attend events that fuel their passions and enrich their lives.</p>
-            <img src="img/icon1.png" alt="Facebook">
-            <img src="img/icon2.png" alt="Twitter">
-            <img src="img/icon3.png" alt="Linkedin">
+        <div class="footer-content">
+            <div class="footer-col">
+                <img src="img/logo.png" alt="logo Eventick">
+                <p>Eventick is a global self-service ticketing platform for live experiences that allows anyone to
+                    create, share, find and attend events that fuel their passions and enrich their lives.</p>
+                <div class="social-icons">
+                    <img src="img/icon1.png" alt="Facebook">
+                    <img src="img/icon2.png" alt="Twitter">
+                    <img src="img/icon3.png" alt="Linkedin">
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Plan Events</h4>
+                <ul>
+                    <li>Create and Set Up</li>
+                    <li>Sell Tickets</li>
+                    <li>Online RSVP</li>
+                    <li>Online Events</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Eventick</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Press</li>
+                    <li>Contact Us</li>
+                    <li>Help Center</li>
+                    <li>How it Works</li>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Stay In The Loop</h4>
+                <p>Join our mailing list to stay in the loop with our newest for Event and concert</p>
+                <div class="newsletter-wrapper">
+                    <input type="email" placeholder="Enter your email address..">
+                    <button>Subscribe Now</button>
+                </div>
+            </div>
         </div>
-        <div>
-            <h4>Plan Events</h4>
-            <ul>
-                <li>Create and Set Up</li>
-                <li>Sell Tickets</li>
-                <li>Online RSVP</li>
-                <li>Online Events</li>
-            </ul>
-        </div>
-        <div>
-            <h4>Eventick</h4>
-            <ul>
-                <li>About Us</li>
-                <li>Press</li>
-                <li>Contact Us</li>
-                <li>Help Center</li>
-                <li>How it Works</li>
-                <li>Privacy</li>
-                <li>Terms</li>
-            </ul>
-        </div>
-        <div>
-            <h4>Stay in the loop</h4>
-            <p>Join our mailing list to stay in the loop with our newest for Event and concert</p>
-            <input type="email" placeholder="Enter your email address..">
-            <button><a href="SignUp.html">Subscibe Now</a></button>
-        </div>
+
         <hr>
-        <p>Copyright © 2022 Avi Yansah</p>
+        <p class="copyright">Copyright © 2022 Avi Yansah</p>
     </footer>
 </body>
 

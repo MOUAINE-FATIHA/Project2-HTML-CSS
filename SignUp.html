@@ -1,100 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="Home.css">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="Sign.css">
 </head>
 
 <body>
-    <header>
-        <img src="img/logo.png" alt="logo Eventick">
-        <nav>
-            <ul>
-                <li>
-                    <a href="Home.html">Home</a>
-                </li>
-                <li>
-                    <a href="Events.html">Events</a>
-                </li>
-                <li>
-                    <a href="Blog.html">Blog</a>
-                </li>
-                <div id="login">
-                    <li>
-                        <a href="Login.html">Login</a>
-                    </li>
-                    <li>
-                        <a href="SignUp.html">Sign Up</a>
-                    </li>
-                </div>
+    <header class="navbar">
+        <div class="navbar-left">
+            <img src="img/logo.png" alt="Eventick Logo" class="logo">
+        </div>
+        <nav class="navbar-center">
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Blog.html">Blog</a></li>
             </ul>
         </nav>
-        <h1>Register and Join the Community of Event Enthusiasts</h1>
-        <form action="" method="post" class="formLogin">
-            <h1>Register for events</h1>
-            <div>
-                <div>
-                    <label for="">First Name</label>
-                    <input type="text" placeholder="Enter your first name">
-                    <label for="">Email</label>
-                    <input type="email" placeholder="Enter your email">
-                    <label for="">Password</label>
-                    <input type="password" placeholder="Enter your password">
+        <div class="auth-buttons navbar-right">
+            <a href="Login.html" class="btn login">Login</a>
+            <a href="SignUp.html" class="btn signup">Sign Up</a>
+        </div>
+    </header>
+
+    <main class="signup-container">
+        <div class="signup-header">
+            <h1>Register and Join the Community of Event Enthusiasts</h1>
+        </div>
+
+        <div class="signup-box">
+            <form action="#" method="post" class="signup-form">
+                <div class="form-grid">
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="firstname">First Name</label>
+                            <input type="text" id="firstname" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Enter your password" required>
+                        </div>
+                    </div>
+
+                    <div class="form-divider"></div>
+
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname" placeholder="Enter your last name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-email">Confirm Email</label>
+                            <input type="email" id="confirm-email" placeholder="Confirm your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <label for="">Last Name</label>
-                    <input type="text" placeholder="Enter your last name">
-                    <label for="">Confirm Email</label>
-                    <input type="email" placeholder="Confirm your email">
-                    <label for="">Cofirm Password</label>
-                    <input type="password" placeholder="Confirm your password">
-                    <button><a href="SignUp.html">Sign Up</a></button>
+
+                <button type="submit" class="btn-submit">Sign Up</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <img src="img/logo.png" alt="Eventick Logo">
+                <p>Eventick is a global self-service ticketing platform for live experiences that allows anyone to create, share, find and attend events that fuel their passions and enrich their lives.</p>
+                <div class="social-icons">
+                    <img src="img/icon1.png" alt="Facebook">
+                    <img src="img/icon2.png" alt="Twitter">
+                    <img src="img/icon3.png" alt="Linkedin">
                 </div>
             </div>
-        </form>
-    </header>
-    <footer>
-        <div>
-            <img src="img/logo.png" alt="logo Eventick">
-            <p>Eventick is a global self-service ticketing platform for live experiences that allows anyone to create,
-                share, find and attend events that fuel their passions and enrich their lives.</p>
-            <img src="img/icon1.png" alt="Facebook">
-            <img src="img/icon2.png" alt="Twitter">
-            <img src="img/icon3.png" alt="Linkedin">
-        </div>
-        <div>
-            <h4>Plan Events</h4>
-            <ul>
-                <li>Create and Set Up</li>
-                <li>Sell Tickets</li>
-                <li>Online RSVP</li>
-                <li>Online Events</li>
-            </ul>
-        </div>
-        <div>
-            <h4>Eventick</h4>
-            <ul>
-                <li>About Us</li>
-                <li>Press</li>
-                <li>Contact Us</li>
-                <li>Help Center</li>
-                <li>How it Works</li>
-                <li>Privacy</li>
-                <li>Terms</li>
-            </ul>
-        </div>
-        <div>
-            <h4>Stay in the loop</h4>
-            <p>Join our mailing list to stay in the loop with our newest for Event and concert</p>
-            <input type="email" placeholder="Enter your email address..">
-            <button><a href="SignUp.html">Subscibe Now</a></button>
+            <div class="footer-column">
+                <h4>Plan Events</h4>
+                <ul>
+                    <li>Create and Set Up</li>
+                    <li>Sell Tickets</li>
+                    <li>Online RSVP</li>
+                    <li>Online Events</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Eventick</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Press</li>
+                    <li>Contact Us</li>
+                    <li>Help Center</li>
+                    <li>How it Works</li>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                </ul>
+            </div>
+            <div class="footer-column newsletter">
+                <h4>Stay In The Loop</h4>
+                <p>Join our mailing list to stay in the loop with our newest for Event and concert</p>
+                <form>
+                    <input type="email" placeholder="Enter your email address.." required>
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
         </div>
         <hr>
-        <p>Copyright © 2022 Avi Yansah</p>
+        <p class="copyright">Copyright © 2022 Avi Yansah</p>
     </footer>
 </body>
-
 </html>

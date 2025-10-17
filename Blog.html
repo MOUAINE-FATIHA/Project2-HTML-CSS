@@ -4,140 +4,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Blog Page</title>
     <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="blog.css">
 </head>
 
 <body>
-    <header>
-        <img src="img/logo.png" alt="logo Eventick">
+    <header class="BLOG-page">
         <nav>
             <ul>
-                <li>
-                    <a href="Home.html">Home</a>
-                </li>
-                <li>
-                    <a href="Events.html">Events</a>
-                </li>
-                <li>
-                    <a href="Blog.html">Blog</a>
-                </li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Blog.html">Blog</a></li>
                 <div id="login">
-                    <li>
-                        <a href="Login.html">Login</a>
-                    </li>
-                    <li>
-                        <a href="SignUp.html">Sign Up</a>
-                    </li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="SignUp.html">Sign Up</a></li>
                 </div>
             </ul>
         </nav>
+
+        <div class="hero">
+            <h1>WELCOME !</h1>
+            <div class="txt">
+                <p>Step inside where energy sparks, bets drop and memories are mode.
+                    Dive into our nightly fusion of music, lights and vibrant community.</p>
+                <div class="buttoms">
+                    <button><a href="Home.html">Home</a></button>
+                    <button><a href="Blog.html">Blog</a></button>
+                </div>
+            </div>
+        </div>
     </header>
 
-
     <main>
-        <h1>WELCOME !</h1>
-        <p>Step inside where energy sparks, beats drop and memories are mode.
-            Dive into our nightly fusion of music, lights and vibrant community.
-        </p>
-        <button><a href="Home.html">Home</a></button>
-        <button><a href="Events.html">Events</a></button>
-        <div>
+        <section class="blog-section">
             <h2>Blog</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        </div>
-        <div class="card">
-            <img src="img/Rectangle 14.png" alt="Rectangle 14" />
-            <div id="Strategies">
-                <h3>6 Strategies to Find Your Conference Keynote and Other Speakers</h3>
-                <p>Sekarang, kamu bisa produksi tiket fisik untuk eventmu bersama Bostiketbos. Hanya perlu mengikuti
-                    beberapa langkah mudah.</p>
-                <p>12 Mar - Jhon Doe</p>
-            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-            <img src="img/Rectangle 14 (1).png" alt="Rectangle 14.1" />
-            <div id="Successfully">
-                <h3>How Successfully Used Paid Marketing to Drive Incremental Ticket Sales</h3>
-                <p>Sekarang, kamu bisa produksi tiket fisik untuk eventmu bersama Bostiketbos. Hanya perlu mengikuti
-                    beberapa langkah mudah.</p>
-                <p>12 Mar - Jhon Doe</p>
-            </div>
-
-            <img src="img/Rectangle 14 (2).png" alt="Rectangle 14.2" />
-            <div id="APR">
-                <h3>Introducing Workspaces: Work smarter, not harder with new navigation</h3>
-                <p>Sekarang, kamu bisa produksi tiket fisik untuk eventmu bersama Bostiketbos. Hanya perlu mengikuti
-                    beberapa langkah mudah.</p>
-                <p>12 Mar - Jhon Doe</p>
-            </div>
-
-            <div class="card">
-                <img src="img/Rectangle 14.png" alt="Rectangle 14" />
-                <div id="Strategies">
+            <div class="blog-card">
+                <div class="blog-wrapper">
+                    <img src="img/Rectangle 14.png" alt="Conference" />
                     <h3>6 Strategies to Find Your Conference Keynote and Other Speakers</h3>
                     <p>Sekarang, kamu bisa produksi tiket fisik untuk eventmu bersama Bostiketbos. Hanya perlu mengikuti
                         beberapa langkah mudah.</p>
-                    <p>12 Mar - Jhon Doe</p>
+                    <p class="blog-meta">12 Mar - Jhon Doe</p>
                 </div>
 
-                <img src="img/Rectangle 14 (1).png" alt="Rectangle 14.1" />
-                <div id="Successfully">
+                <div class="blog-wrapper">
+                    <img src="img/Rectangle 14 (1).png" alt="Marketing" />
                     <h3>How Successfully Used Paid Marketing to Drive Incremental Ticket Sales</h3>
                     <p>Sekarang, kamu bisa produksi tiket fisik untuk eventmu bersama Bostiketbos. Hanya perlu mengikuti
                         beberapa langkah mudah.</p>
-                    <p>12 Mar - Jhon Doe</p>
+                    <p class="blog-meta">12 Mar - Jhon Doe</p>
                 </div>
 
-                <img src="img/Rectangle 14 (2).png" alt="Rectangle 14.2" />
-                <div id="APR">
+                <div class="blog-wrapper">
+                    <img src="img/blog4.jfif " alt="Workspaces" />
                     <h3>Introducing Workspaces: Work smarter, not harder with new navigation</h3>
                     <p>Sekarang, kamu bisa produksi tiket fisik untuk eventmu bersama Bostiketbos. Hanya perlu mengikuti
                         beberapa langkah mudah.</p>
-                    <p>12 Mar - Jhon Doe</p>
+                    <p class="blog-meta">12 Mar - Jhon Doe</p>
+                </div>
+                <div class="blog-wrapper">
+                    <img src="img/blog6.jfif" alt="Conference" />
+                    <h3>6 Strategies to Find Your Conference Keynote and Other Speakers</h3>
+                    <p>Sekarang, kamu bisa produksi tiket fisik untuk eventmu bersama Bostiketbos. Hanya perlu mengikuti
+                        beberapa langkah mudah.</p>
+                    <p class="blog-meta">12 Mar - Jhon Doe</p>
+                </div>
+
+                <div class="blog-wrapper">
+                    <img src="img/Rectangle 14 (2).png" alt="Marketing" />
+                    <h3>How Successfully Used Paid Marketing to Drive Incremental Ticket Sales</h3>
+                    <p>Sekarang, kamu bisa produksi tiket fisik untuk eventmu bersama Bostiketbos. Hanya perlu mengikuti
+                        beberapa langkah mudah.</p>
+                    <p class="blog-meta">12 Mar - Jhon Doe</p>
+                </div>
+
+                <div class="blog-wrapper">
+                    <img src="img/blog3.jfif" alt="Workspaces" />
+                    <h3>Introducing Workspaces: Work smarter, not harder with new navigation</h3>
+                    <p>Sekarang, kamu bisa produksi tiket fisik untuk eventmu bersama Bostiketbos. Hanya perlu mengikuti
+                        beberapa langkah mudah.</p>
+                    <p class="blog-meta">12 Mar - Jhon Doe</p>
                 </div>
             </div>
-            <button><a href="Blog.html">Load more</a></button>
+
+            <div class="load-more">
+                    <a href="events.html" class="button">Load More</a>
+                </div>
+        </section>
     </main>
 
-
     <footer>
-        <div>
-            <img src="img/logo.png" alt="logo Eventick">
-            <p>Eventick is a global self-service ticketing platform for live experiences that allows anyone to create,
-                share, find and attend events that fuel their passions and enrich their lives.</p>
-            <img src="img/icon1.png" alt="Facebook">
-            <img src="img/icon2.png" alt="Twitter">
-            <img src="img/icon3.png" alt="Linkedin">
+        <div class="footer-content">
+            <div class="footer-col">
+                <img src="img/logo.png" alt="logo Eventick">
+                <p>Eventick is a global self-service ticketing platform for live experiences that allows anyone to
+                    create, share, find and attend events that fuel their passions and enrich their lives.</p>
+                <div class="social-icons">
+                    <img src="img/icon1.png" alt="Facebook">
+                    <img src="img/icon2.png" alt="Twitter">
+                    <img src="img/icon3.png" alt="Linkedin">
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Plan Events</h4>
+                <ul>
+                    <li>Create and Set Up</li>
+                    <li>Sell Tickets</li>
+                    <li>Online RSVP</li>
+                    <li>Online Events</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Eventick</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Press</li>
+                    <li>Contact Us</li>
+                    <li>Help Center</li>
+                    <li>How it Works</li>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Stay In The Loop</h4>
+                <p>Join our mailing list to stay in the loop with our newest for Event and concert</p>
+                <div class="newsletter-wrapper">
+                    <input type="email" placeholder="Enter your email address..">
+                    <button>Subscribe Now</button>
+                </div>
+            </div>
         </div>
-        <div>
-            <h4>Plan Events</h4>
-            <ul>
-                <li>Create and Set Up</li>
-                <li>Sell Tickets</li>
-                <li>Online RSVP</li>
-                <li>Online Events</li>
-            </ul>
-        </div>
-        <div>
-            <h4>Eventick</h4>
-            <ul>
-                <li>About Us</li>
-                <li>Press</li>
-                <li>Contact Us</li>
-                <li>Help Center</li>
-                <li>How it Works</li>
-                <li>Privacy</li>
-                <li>Terms</li>
-            </ul>
-        </div>
-        <div>
-            <h4>Stay in the loop</h4>
-            <p>Join our mailing list to stay in the loop with our newest for Event and concert</p>
-            <input type="email" placeholder="Enter your email address..">
-            <button><a href="SignUp.html">Subscibe Now</a></button>
-        </div>
+
         <hr>
-        <p>Copyright © 2022 Avi Yansah</p>
+        <p class="copyright">Copyright © 2022 Avi Yansah</p>
     </footer>
 </body>
 

@@ -4,91 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="Home.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css">
 </head>
 
 <body>
-    <header>
-        <img src="img/logo.png" alt="logo Eventick">
-        <nav>
-            <ul>
-                <li>
-                    <a href="Home.html">Home</a>
-                </li>
-                <li>
-                    <a href="Events.html">Events</a>
-                </li>
-                <li>
-                    <a href="Blog.html">Blog</a>
-                </li>
-                <div id="login">
-                    <li>
-                        <a href="Login.html">Login</a>
-                    </li>
-                    <li>
-                        <a href="SignUp.html">Sign Up</a>
-                    </li>
-                </div>
+
+    <header class="navbar">
+        <div class="navbar-left">
+            <img src="img/logo.png" alt="Eventick Logo" class="logo">
+        </div>
+
+        <nav class="navbar-center">
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Blog.html">Blog</a></li>
             </ul>
         </nav>
-        <form action="" method="post" class="formLogin">
-            <img src="img/img login 1.png" alt="kpop image">
-            <div>
+        <div class="auth-buttons navbar-right">
+            <a href="Login.html" class="btn login">Login</a>
+            <a href="SignUp.html" class="btn signup">Sign Up</a>
+        </div>
+    </header>
+
+
+
+    <main class="login-container">
+        <div class="login-box">
+            <div class="login-image">
+                <img src="img/img login 1.png" alt="Concert Crowd">
+            </div>
+            <div class="login-form">
                 <h1>Hello !</h1>
-                <div>
-                    <p> <span>Login</span> Your Account</p>
-                    <input type="text" placeholder="Enter your name">
-                    <input type="password" placeholder="Enter your password">
-                    <div>
-                        <input type="radio" id="Remember" name="drone" value="Remember" checked />
-                        <label for="Remember">Remember</label>
+                <p><span>Login</span> Your Account</p>
+                <form action="#" method="post">
+                    <div class="input-wrapper">
+                        <img src="img/utilisateur (1).png" alt="User Icon" class="input-icon">
+                        <input type="text" placeholder="Enter your name" required>
                     </div>
-                    <a href="SignUp.html">Forgot password ?</a>
-                    <button><a href="Login.html">Login</a></button>
+                    <div class="input-wrapper">
+                        <img src="img/verrouillage (1).png" alt="Lock Icon" class="input-icon">
+                        <input type="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="options">
+                        <label><input type="checkbox" checked> Remember</label>
+                        <a href="SignUp.html">Forgot password ?</a>
+                    </div>
+                    <button type="submit" class="btn-submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <img src="img/logo.png" alt="Eventick Logo">
+                <p>Eventick is a global self-service ticketing platform for live experiences that allows anyone to
+                    create, share, find and attend events that fuel their passions and enrich their lives.</p>
+                <div class="social-icons">
+                    <img src="img/icon1.png" alt="Facebook">
+                    <img src="img/icon2.png" alt="Twitter">
+                    <img src="img/icon3.png" alt="LinkedIn">
                 </div>
             </div>
-        </form>
-
-    </header>
-    <footer>
-        <div>
-            <img src="img/logo.png" alt="logo Eventick">
-            <p>Eventick is a global self-service ticketing platform for live experiences that allows anyone to create,
-                share, find and attend events that fuel their passions and enrich their lives.</p>
-            <img src="img/icon1.png" alt="Facebook">
-            <img src="img/icon2.png" alt="Twitter">
-            <img src="img/icon3.png" alt="Linkedin">
-        </div>
-        <div>
-            <h4>Plan Events</h4>
-            <ul>
-                <li>Create and Set Up</li>
-                <li>Sell Tickets</li>
-                <li>Online RSVP</li>
-                <li>Online Events</li>
-            </ul>
-        </div>
-        <div>
-            <h4>Eventick</h4>
-            <ul>
-                <li>About Us</li>
-                <li>Press</li>
-                <li>Contact Us</li>
-                <li>Help Center</li>
-                <li>How it Works</li>
-                <li>Privacy</li>
-                <li>Terms</li>
-            </ul>
-        </div>
-        <div>
-            <h4>Stay in the loop</h4>
-            <p>Join our mailing list to stay in the loop with our newest for Event and concert</p>
-            <input type="email" placeholder="Enter your email address..">
-            <button><a href="SignUp.html">Subscibe Now</a></button>
+            <div class="footer-column">
+                <h4>Plan Events</h4>
+                <ul>
+                    <li>Create and Set Up</li>
+                    <li>Sell Tickets</li>
+                    <li>Online RSVP</li>
+                    <li>Online Events</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Eventick</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Press</li>
+                    <li>Contact Us</li>
+                    <li>Help Center</li>
+                    <li>How it Works</li>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                </ul>
+            </div>
+            <div class="footer-column newsletter">
+                <h4>Stay In The Loop</h4>
+                <p>Join our mailing list to stay in the loop with our newest for Event and concert</p>
+                <form>
+                    <input type="email" placeholder="Enter your email address.." required>
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
         </div>
         <hr>
-        <p>Copyright © 2022 Avi Yansah</p>
+        <p class="copyright">Copyright © 2022 Avi Yansah</p>
     </footer>
 </body>
 
